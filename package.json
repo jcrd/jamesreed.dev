@@ -13,11 +13,12 @@
         "format": "prettier --write ."
     },
     "devDependencies": {
+        "@iconify-json/material-symbols": "^1.2.2",
         "@playwright/test": "^1.28.1",
         "@sveltejs/adapter-auto": "^3.0.0",
         "@sveltejs/kit": "^2.0.0",
         "@sveltejs/vite-plugin-svelte": "^3.0.0",
-        "@tailwindcss/typography": "^0.5.14",
+        "@tailwindcss/typography": "^0.5.15",
         "@types/eslint": "^9.6.0",
         "autoprefixer": "^10.4.20",
         "eslint": "^9.0.0",
@@ -25,6 +26,7 @@
         "eslint-plugin-svelte": "^2.36.0",
         "globals": "^15.0.0",
         "houdini": "^1.2.64",
+        "houdini-svelte": "^1.2.64",
         "prettier": "^3.1.1",
         "prettier-plugin-svelte": "^3.1.2",
         "prettier-plugin-tailwindcss": "^0.6.5",
@@ -33,8 +35,8 @@
         "tailwindcss": "^3.4.9",
         "typescript": "^5.0.0",
         "typescript-eslint": "^8.0.0",
-        "vite": "^5.0.3",
-        "houdini-svelte": "^1.2.64"
+        "unplugin-icons": "^0.19.3",
+        "vite": "^5.0.3"
     },
     "type": "module"
 }

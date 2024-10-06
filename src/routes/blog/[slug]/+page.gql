@@ -1,0 +1,13 @@
+query Post($slug: String!) {
+	publication(host: "jamesreed.dev") {
+		post(slug: $slug) {
+			title
+			content {
+				html
+			}
+			coverImage {
+				url
+			}
+		}
+	}
+}

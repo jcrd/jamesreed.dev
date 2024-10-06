@@ -1,0 +1,18 @@
+query BlogPage {
+	publication(host: "jamesreed.dev") {
+		title
+		posts(first: 10) {
+			edges {
+				node {
+					title
+					brief
+					slug
+					url
+					coverImage {
+						url
+					}
+				}
+			}
+		}
+	}
+}
