@@ -1,8 +1,12 @@
-import { BlogPreviewStore } from '$houdini';
+import { PUBLIC_GITHUB_API_URL } from '$env/static/public';
 
-/* @type { import('./$houdini').PageServerLoad } */
 export async function load(event) {
-	const blogPreview = new BlogPreviewStore();
-	const { data: blogPreviewData } = await blogPreview.fetch({ event });
-	return { blogPreview: blogPreviewData };
+	const fetch = event.fetch;
+
+	const res = await fetch(PUBLIC_GITHUB_API_URL);
+	const data = await res.json();
+
+	return {
+		avatarUrl: data.avatar_url
+	};
 }

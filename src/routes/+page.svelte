@@ -1,11 +1,11 @@
 <script lang="ts">
     import HeroSection from '$lib/HeroSection.svelte'
-    import BlogPreview from '$lib/BlogPreview.svelte'
+    import About from '$lib/About.svelte'
 
     export let data
 </script>
 
-<div class="">
+<div class="w-full flex flex-col gap-32">
     <HeroSection />
-    <BlogPreview postPreview={data.blogPreview} />
+    <About avatarUrl={data.avatarUrl} />
 </div>

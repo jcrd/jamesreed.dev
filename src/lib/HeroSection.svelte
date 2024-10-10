@@ -1,3 +1,28 @@
-<div class="h-screen flex items-center justify-center">
-    James Reed
+<script>
+    import tilt from 'svelte-tilt'
+
+    import nameCalloutUrl from './graphics/name_callout.svg?url'
+</script>
+
+<div class="h-screen flex flex-col items-center justify-center text-[6em]">
+    <div class="-ml-[7em] flex gap-6">
+        <p class="">
+            You found
+        </p>
+    </div>
+    <div
+        class="pt-8 relative"
+        use:tilt={{
+            reverse: true,
+            scale: 1.1,
+        }}
+    >
+        <img class="" src={nameCalloutUrl} />
+        <p class="skew-x-[24deg] rotate-[2deg] absolute bottom-[70px] left-[130px] font-semibold">
+            James Reed
+        </p>
+    </div>
+    <p class="ml-[4em]">
+        on the <span class="italic font-light text-[7rem]">internet</span>
+    </p>
 </div>

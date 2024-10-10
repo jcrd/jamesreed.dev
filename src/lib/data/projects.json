@@ -1,0 +1,57 @@
+[
+    {
+        "name": "sessiond",
+        "tech": [
+            "Linux",
+            "D-Bus",
+            "C",
+            "Python",
+            "Hugo"
+        ],
+        "url": "https://jcrd.github.io/sessiond/",
+        "status": "Stable",
+        "description": ""
+    },
+    {
+        "name": "brainstack",
+        "tech": [
+            "Svelte",
+            "JavaScript",
+            "Tailwind CSS",
+            "Skeleton UI",
+            "Wails",
+            "Go"
+        ],
+        "url": "https://github.com/jcrd/brainstack",
+        "status": "Pre-release",
+        "description": ""
+    },
+    {
+        "name": "Vegan Spice Boy",
+        "tech": [
+            "Python",
+            "FastAPI",
+            "OpenAI",
+            "JavaScript",
+            "SvelteKit",
+            "Tailwind CSS",
+            "daisyUI"
+        ],
+        "url": "https://www.veganspiceboy.com/",
+        "status": "In production",
+        "description": ""
+    },
+    {
+        "name": "Lifecycles",
+        "tech": [
+            "JavaScript",
+            "SvelteKit",
+            "Tailwind CSS",
+            "daisyUI",
+            "Supabase"
+        ],
+        "url": "https://lifecycles.app/",
+        "status": "In development",
+        "description": ""
+    }
+]
