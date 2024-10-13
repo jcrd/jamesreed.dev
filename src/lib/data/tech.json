@@ -60,16 +60,6 @@
         "iconUrl": "https://api.iconify.design/logos:go.svg"
     },
     {
-        "name": "Wails",
-        "color": "#df0000",
-        "iconUrl": "https://api.iconify.design/simple-icons:wails.svg"
-    },
-    {
-        "name": "Hugo",
-        "color": "#ebb951",
-        "iconUrl": "https://api.iconify.design/logos:hugo.svg"
-    },
-    {
         "name": "C",
         "color": "#555555",
         "iconUrl": "https://api.iconify.design/logos:c.svg"
@@ -83,10 +73,5 @@
         "name": "Shell",
         "color": "#89e051",
         "iconUrl": "https://api.iconify.design/logos:bash-icon.svg"
-    },
-    {
-        "name": "Godot",
-        "color": "#478cbf",
-        "iconUrl": "https://api.iconify.design/logos:godot-icon.svg"
     }
 ]
