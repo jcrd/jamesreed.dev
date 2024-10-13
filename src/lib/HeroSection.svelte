@@ -11,14 +11,14 @@
         </p>
     </div>
     <div
-        class="pt-8 relative"
+        class="pt-8 relative block"
         use:tilt={{
             reverse: true,
-            scale: 1.1,
+            scale: 1.2,
         }}
     >
         <img class="" src={nameCalloutUrl} />
-        <p class="skew-x-[24deg] rotate-[2deg] absolute bottom-[70px] left-[130px] font-semibold">
+        <p class="block transform translate-z-[80px] skew-x-[24deg] rotate-[2deg] absolute bottom-[70px] left-[130px] font-semibold">
             James Reed
         </p>
     </div>

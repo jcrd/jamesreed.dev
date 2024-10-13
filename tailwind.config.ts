@@ -7,5 +7,13 @@ export default {
 		extend: {}
 	},
 
-	plugins: [require('@tailwindcss/typography'), require('daisyui')]
+	plugins: [
+		require('@tailwindcss/typography'),
+		require('daisyui'),
+		require('@xpd/tailwind-3dtransforms')
+	],
+
+	daisyui: {
+		themes: ['light']
+	}
 } as Config;

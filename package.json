@@ -21,6 +21,7 @@
         "@sveltejs/vite-plugin-svelte": "^3.0.0",
         "@tailwindcss/typography": "^0.5.15",
         "@types/eslint": "^9.6.0",
+        "@xpd/tailwind-3dtransforms": "^1.0.3",
         "autoprefixer": "^10.4.20",
         "daisyui": "^4.12.12",
         "eslint": "^9.0.0",
@@ -39,5 +40,8 @@
         "unplugin-icons": "^0.19.3",
         "vite": "^5.0.3"
     },
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "@splidejs/svelte-splide": "^0.2.9"
+    }
 }

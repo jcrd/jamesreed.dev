@@ -1,5 +1,6 @@
 [
     {
+        "order": 3,
         "name": "sessiond",
         "tech": [
             "Linux",
@@ -9,10 +10,19 @@
             "Hugo"
         ],
         "url": "https://jcrd.github.io/sessiond/",
+        "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/v1728603503/jamesreed.dev/Screenshot_from_2024-10-10_17-34-36_onouqp.png",
         "status": "Stable",
-        "description": ""
+        "statusColor": "complete",
+        "description": "Low-level Linux daemon",
+        "info": [
+            "Interfaces with the modern Linux systemd infrastructure",
+            "Provides session management functionality to X11 window managers",
+            "Written in C with a client written in Python",
+            "Has an extensive documentation site built with Hugo"
+        ]
     },
     {
+        "order": 4,
         "name": "brainstack",
         "tech": [
             "Svelte",
@@ -20,13 +30,22 @@
             "Tailwind CSS",
             "Skeleton UI",
             "Wails",
-            "Go"
+            "Go",
+            "SQLite"
         ],
         "url": "https://github.com/jcrd/brainstack",
+        "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/t_Expanded/v1728600769/jamesreed.dev/screenshot_u4oquh.png",
         "status": "Pre-release",
-        "description": ""
+        "statusColor": "wip",
+        "description": "Cross-platform desktop app for intuitive task management",
+        "info": [
+            "Uses the app framework Wails written in Go",
+            "Integrates a webview-based frontend using Svelte",
+            "Persists data with SQLite"
+        ]
     },
     {
+        "order": 1,
         "name": "Vegan Spice Boy",
         "tech": [
             "Python",
@@ -35,13 +54,23 @@
             "JavaScript",
             "SvelteKit",
             "Tailwind CSS",
-            "daisyUI"
+            "daisyUI",
+            "Strapi"
         ],
         "url": "https://www.veganspiceboy.com/",
+        "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/v1728603504/jamesreed.dev/Screenshot_from_2024-10-10_17-36-00_bfgoyk.png",
         "status": "In production",
-        "description": ""
+        "statusColor": "complete",
+        "description": "AI-powered recipe blog using ChatGPT",
+        "info": [
+            "Fully automated generation and publication process with a FastAPI backend",
+            "Posts new recipe announcements to Twitter",
+            "Uses Strapi to manage generated content",
+            "Has a custom SvelteKit blog frontend"
+        ]
     },
     {
+        "order": 2,
         "name": "Lifecycles",
         "tech": [
             "JavaScript",
@@ -51,7 +80,14 @@
             "Supabase"
         ],
         "url": "https://lifecycles.app/",
+        "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/v1728603503/jamesreed.dev/Screenshot_from_2024-10-10_17-37-49_rg38xa.png",
         "status": "In development",
-        "description": ""
+        "statusColor": "incomplete",
+        "description": "Web app for mindful productivity and habit creation",
+        "info": [
+            "Uses Supabase on the backend for database and user management",
+            "Has a custom SvelteKit frontend",
+            "Based on ideas proposed by the <a href='https://nesslabs.com/pari'>PARI system</a>"
+        ]
     }
 ]
