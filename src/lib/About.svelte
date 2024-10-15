@@ -5,12 +5,12 @@
     export let avatarUrl
 </script>
 
-<div id="#about" class="scroll-mt-32 h-3/4 p-24 border-2 border-black relative flex flex-col items-center justify-center gap-24">
+<div id="#about" class="scroll-mt-32 w-full p-24 border-2 border-black relative flex flex-col items-center justify-center gap-24">
     <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
     <div class="text-[6em] absolute -top-20 bg-white italic font-light -ml-[7em] pr-4">
         {aboutData.title}
     </div>
-    <div class="grid grid-cols-2 w-3/4">
+    <div class="grid grid-cols-2 px-24">
         <div class="bg-black w-fit p-8 -skew-x-[22deg]">
             <img width={300} class="skew-x-[22deg]" src={avatarUrl} />
         </div>
