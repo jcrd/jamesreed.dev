@@ -5,7 +5,7 @@
     export let avatarUrl
 </script>
 
-<div class="h-3/4 p-24 border-2 border-black relative flex flex-col items-center justify-center gap-24">
+<div id="#about" class="scroll-mt-32 h-3/4 p-24 border-2 border-black relative flex flex-col items-center justify-center gap-24">
     <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
     <div class="text-[6em] absolute -top-20 bg-white italic font-light -ml-[7em] pr-4">
         {aboutData.title}

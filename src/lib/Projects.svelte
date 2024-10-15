@@ -14,9 +14,9 @@
     }
 </script>
 
-<div class="flex flex-col gap-20">
+<div id="#projects" class="scroll-mt-32 flex flex-col gap-20">
     <div class="divider text-[6em] italic font-light">
-        I've built
+        Projects
     </div>
     <Splide hasTrack={false} options={{ pagination: false }}>
         <div>

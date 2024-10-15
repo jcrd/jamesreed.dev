@@ -4,7 +4,7 @@
     import nameCalloutUrl from './graphics/name_callout.svg?url'
 </script>
 
-<div class="h-screen flex flex-col items-center justify-center text-[6em]">
+<div id="#hero" class="h-screen flex flex-col items-center justify-center text-[6em]">
     <div class="-ml-[7em] flex gap-6">
         <p class="">
             You found
