@@ -10,16 +10,10 @@
             "Hugo"
         ],
         "url": "https://jcrd.github.io/sessiond/",
-        "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/v1728603503/jamesreed.dev/Screenshot_from_2024-10-10_17-34-36_onouqp.png",
+        "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/v1729008348/jamesreed.dev/sessiond_corner_g0lj1o.png",
         "status": "Stable",
         "statusColor": "complete",
-        "description": "Low-level Linux daemon",
-        "info": [
-            "Interfaces with the modern Linux systemd infrastructure",
-            "Provides session management functionality to X11 window managers",
-            "Written in C with a client written in Python",
-            "Has an extensive documentation site built with Hugo"
-        ]
+        "description": "Low-level Linux session management daemon for X11 window managers written in C and Python"
     },
     {
         "order": 4,
@@ -34,15 +28,10 @@
             "SQLite"
         ],
         "url": "https://github.com/jcrd/brainstack",
-        "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/t_Expanded/v1728600769/jamesreed.dev/screenshot_u4oquh.png",
+        "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/v1729008511/jamesreed.dev/brainstack_corner_jq9bec.png",
         "status": "Pre-release",
         "statusColor": "wip",
-        "description": "Cross-platform desktop app for intuitive task management",
-        "info": [
-            "Uses the app framework Wails written in Go",
-            "Integrates a webview-based frontend using Svelte",
-            "Persists data with SQLite"
-        ]
+        "description": "Cross-platform desktop app for intuitive task management built with the Wails framework and Svelte"
     },
     {
         "order": 1,
@@ -58,16 +47,10 @@
             "Strapi"
         ],
         "url": "https://www.veganspiceboy.com/",
-        "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/v1728603504/jamesreed.dev/Screenshot_from_2024-10-10_17-36-00_bfgoyk.png",
-        "status": "In production",
+        "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/v1729008348/jamesreed.dev/vsb_corner_jmvtqq.png",
+        "status": "Production",
         "statusColor": "complete",
-        "description": "AI-powered recipe blog using ChatGPT",
-        "info": [
-            "Fully automated generation and publication process with a FastAPI backend",
-            "Posts new recipe announcements to Twitter",
-            "Uses Strapi to manage generated content",
-            "Has a custom SvelteKit blog frontend"
-        ]
+        "description": "AI-powered recipe blog using ChatGPT with image generation and Twitter announcement posts"
     },
     {
         "order": 2,
@@ -80,14 +63,9 @@
             "Supabase"
         ],
         "url": "https://lifecycles.app/",
-        "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/v1728603503/jamesreed.dev/Screenshot_from_2024-10-10_17-37-49_rg38xa.png",
-        "status": "In development",
+        "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/v1729008348/jamesreed.dev/lifecycles_corner_hvwv74.png",
+        "status": "Development",
         "statusColor": "incomplete",
-        "description": "Web app for mindful productivity and habit creation",
-        "info": [
-            "Uses Supabase on the backend for database and user management",
-            "Has a custom SvelteKit frontend",
-            "Based on ideas proposed by the <a href='https://nesslabs.com/pari'>PARI system</a>"
-        ]
+        "description": "Web app for mindful productivity and habit creation built with Supabase and SvelteKit"
     }
 ]
