@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { PUBLIC_BLOG_URL } from '$env/static/public'
+
     import RightArrow from '~icons/material-symbols/arrow-right-alt-rounded'
 
     import projectData from './data/projects.json'
@@ -20,10 +22,10 @@
         {#each projectData as project, idx}
         <div class={`flex gap-8 ${idx % 2 ? 'flex-row-reverse' : 'flex-row'} rounded-2xl p-8`}>
             <div class="flex flex-col gap-6 justify-center">
-                <div class="flex gap-2 items-center">
-                    <a href={project.url} class="text-5xl font-bold">{project.name}</a>
+                <a href={project.url} class="w-max flex gap-2 items-center">
+                    <span class="text-5xl font-bold">{project.name}</span>
                     <RightArrow style="font-size:1.75em;margin-top:14"/>
-                </div>
+                </a>
                 <div class="text-xl">
                     {project.description}
                 </div>
@@ -39,9 +41,13 @@
                     <span class={`${statusColors[project.statusColor]} badge badge-xs`}></span>
                     {project.status}
                 </div>
-                <img src={project.imageUrl} class={`${idx % 2 ? 'rounded-l-2xl' : 'rounded-r-2xl'} border-2 border-black object-cover`} />
+                <img src={project.imageUrl} class={`${idx % 2 ? 'rounded-l-2xl' : 'rounded-r-2xl'} border-2 border-black object-cover`} alt={project.name} />
             </a>
         </div>
         {/each}
     </div>
+    <a href={PUBLIC_BLOG_URL} class="flex gap-2 items-center text-2xl font-semibold">
+        Find more projects on my blog
+        <RightArrow style="margin-top:4" />
+    </a>
 </div>
