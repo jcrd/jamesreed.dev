@@ -10,7 +10,6 @@ export default {
 	plugins: [
 		require('@tailwindcss/typography'),
 		require('daisyui'),
-		require('@xpd/tailwind-3dtransforms')
 	],
 
 	daisyui: {

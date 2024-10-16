@@ -14,7 +14,7 @@
     }
 </script>
 
-<div id="#projects" class="scroll-mt-20 md:scroll-mt-28 mx-12 flex flex-col items-center">
+<div id="projects" class="scroll-mt-20 md:scroll-mt-28 mx-12 flex flex-col items-center">
     <div class="divider text-6xl md:text-[6em] italic font-light mb-8 md:mb-24">
         Projects
     </div>

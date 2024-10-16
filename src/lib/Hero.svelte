@@ -1,18 +1,13 @@
 <script lang="ts">
-	import { createEventDispatcher } from 'svelte'
-
     import tilt from 'svelte-tilt'
-
-	const dispatch = createEventDispatcher<{ scroll: string }>()
 </script>
 
-<div id="#hero" class="h-screen flex flex-col items-center justify-center gap-4 md:gap-6 text-[2em] sm:text-[4em] md:text-[5em]">
+<div id="hero" class="h-screen flex flex-col items-center justify-center gap-4 md:gap-6 text-[2em] sm:text-[4em] md:text-[5em]">
     <p class="-ml-[5em] lg:-ml-[7em]">
         You found
     </p>
     <a
         href="#about"
-        on:click={() => dispatch("scroll", "#about")}
         use:tilt={{
             reverse: true,
             scale: 1.1,

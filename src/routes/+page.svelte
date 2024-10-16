@@ -7,23 +7,17 @@
 
     export let data
 
-    $: scrollToHash($page.url.hash)
-
-    function scrollToHash(hash: string) {
-        if (!hash) {
-            return
-        }
-        const el = document.getElementById(hash)
-        if (!el) {
-            return
-        }
-        el.scrollIntoView({
-            behavior: 'smooth',
-        })
+    $: if ($page.url.hash) {
+        scrollToHash($page.url.hash)
     }
 
-    function handleScrollEvent(event: CustomEvent<string>) {
-        scrollToHash(event.detail)
+    function scrollToHash(hash: string) {
+        const el = document.getElementById(hash.slice(1))
+        if (el) {
+            el.scrollIntoView({
+                behavior: 'smooth',
+            })
+        }
     }
 </script>
 
@@ -32,7 +26,7 @@
 </svelte:head>
 
 <div class="flex flex-col gap-24 md:gap-32">
-    <Hero on:scroll={handleScrollEvent} />
-    <About on:scroll={handleScrollEvent} avatarUrl={data.avatarUrl} />
-    <Projects on:scroll={handleScrollEvent} />
+    <Hero />
+    <About avatarUrl={data.avatarUrl} />
+    <Projects />
 </div>
