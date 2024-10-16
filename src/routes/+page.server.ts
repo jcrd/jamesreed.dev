@@ -1,9 +1,9 @@
-import { GITHUB_API_URL } from '$env/static/private';
+import { PUBLIC_GITHUB_API_URL } from '$env/static/public';
 
 export async function load(event) {
 	const fetch = event.fetch;
 
-	const res = await fetch(GITHUB_API_URL);
+	const res = await fetch(PUBLIC_GITHUB_API_URL);
 	const data = await res.json();
 
 	return {

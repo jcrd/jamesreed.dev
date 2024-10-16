@@ -1,8 +1,9 @@
 <script lang="ts">
+    import { PUBLIC_BLOG_URL } from '$env/static/public'
+
     import RightArrow from '~icons/material-symbols/arrow-right-alt-rounded'
 
     import projectData from './data/projects.json'
-    import { BLOG_URL } from './data/urls.json'
 
     projectData.sort((a, b) => a.order - b.order)
 
@@ -47,7 +48,7 @@
             {/if}
         {/each}
     </div>
-    <a href={BLOG_URL} class="flex gap-2 items-center text-lg md:text-2xl font-semibold mt-12">
+    <a href={PUBLIC_BLOG_URL} class="flex gap-2 items-center text-lg md:text-2xl font-semibold mt-12">
         Find more projects on my blog
         <RightArrow style="margin-top:4" />
     </a>
