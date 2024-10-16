@@ -9,4 +9,9 @@
 	<div class="max-w-screen-2xl mx-auto">
 		<slot></slot>
 	</div>
+	<footer class="flex justify-center gap-1 text-gray-700 pt-24 pb-16">
+		©
+		{new Date().getFullYear()}
+		James Reed
+	</footer>
 </main>
