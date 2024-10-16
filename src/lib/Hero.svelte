@@ -3,32 +3,26 @@
 
     import tilt from 'svelte-tilt'
 
-    import nameCalloutUrl from './graphics/name_callout.svg?url'
-
 	const dispatch = createEventDispatcher<{ scroll: string }>()
 </script>
 
-<div id="#hero" class="h-screen flex flex-col items-center justify-center text-[6em]">
-    <div class="-ml-[7em] flex gap-6">
-        <p class="">
-            You found
-        </p>
-    </div>
+<div id="#hero" class="h-screen flex flex-col items-center justify-center gap-4 md:gap-6 text-[2em] sm:text-[4em] md:text-[5em]">
+    <p class="-ml-[5em] lg:-ml-[7em]">
+        You found
+    </p>
     <a
         href="#about"
         on:click={() => dispatch("scroll", "#about")}
-        class="pt-8 relative block"
         use:tilt={{
             reverse: true,
-            scale: 1.2,
+            scale: 1.1,
         }}
     >
-        <img src={nameCalloutUrl} alt="Trapezoidal design element" />
-        <p class="block transform translate-z-[80px] skew-x-[24deg] rotate-[2deg] absolute bottom-[70px] left-[130px] font-semibold">
+        <p class="border-4 border-black border-double p-4 md:p-6">
             James Reed
         </p>
     </a>
-    <p class="ml-[4em]">
-        on the <span class="italic font-light text-[7rem]">internet</span>
+    <p class="ml-[3em] lg:ml-[5em]">
+        on the <span class="italic font-light">internet</span>
     </p>
 </div>

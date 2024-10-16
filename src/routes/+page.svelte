@@ -31,7 +31,7 @@
     <title>James Reed on the internet</title>
 </svelte:head>
 
-<div class="w-full flex flex-col gap-32">
+<div class="flex flex-col gap-24 md:gap-32">
     <Hero on:scroll={handleScrollEvent} />
     <About on:scroll={handleScrollEvent} avatarUrl={data.avatarUrl} />
     <Projects on:scroll={handleScrollEvent} />
