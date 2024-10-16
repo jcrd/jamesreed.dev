@@ -1,9 +1,9 @@
 <script lang="ts">
     import { page } from '$app/stores'
 
-    import { PUBLIC_BLOG_URL } from '$env/static/public'
-
     import RightArrow from '~icons/material-symbols/arrow-right-alt-rounded'
+
+    import { BLOG_URL } from './data/urls.json'
 </script>
 
 <nav class="md:text-xl z-50 navbar w-screen flex justify-center gap-4 bg-white fixed top-0">
@@ -21,7 +21,7 @@
     >
         Projects
     </a>
-    <a class="btn btn-ghost" href={PUBLIC_BLOG_URL}>
+    <a class="btn btn-ghost" href={BLOG_URL}>
         Blog
         <RightArrow style="margin-top:4" />
     </a>
