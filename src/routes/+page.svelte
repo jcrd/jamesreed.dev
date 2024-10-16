@@ -1,7 +1,7 @@
 <script lang="ts">
     import { page } from '$app/stores'
 
-    import HeroSection from '$lib/HeroSection.svelte'
+    import Hero from '$lib/Hero.svelte'
     import About from '$lib/About.svelte'
     import Projects from '$lib/Projects.svelte'
 
@@ -32,7 +32,7 @@
 </svelte:head>
 
 <div class="w-full flex flex-col gap-32">
-    <HeroSection />
+    <Hero on:scroll={handleScrollEvent} />
     <About on:scroll={handleScrollEvent} avatarUrl={data.avatarUrl} />
     <Projects on:scroll={handleScrollEvent} />
 </div>
