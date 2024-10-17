@@ -7,13 +7,13 @@
     export let avatarUrl
 </script>
 
-<div id="about" class="h-screen md:scroll-mt-24 lg:scroll-mt-4 mx-12 flex flex-col items-center justify-center">
+<div id="about" class="h-screen scroll-mt-12 md:scroll-mt-28 mx-12 flex flex-col items-center justify-center">
     <div class="divider text-6xl md:text-[6em] bg-white italic font-light mb-16 md:mb-24">
         {aboutData.title}
     </div>
     <div class="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 lg:gap-12 justify-center items-center px-12 relative max-w-screen-lg">
         <div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        <div class="bg-black ml-14 md:p-4 lg:p-6 -skew-x-[22deg] flex justify-center w-fit">
+        <div class="bg-black ml-12 lg:ml-14 md:p-4 lg:p-6 -skew-x-[22deg] flex justify-center w-fit">
             <img class="mb-4 max-w-[150px] md:max-w-[200px] lg:max-w-[250px] skew-x-[22deg] object-contain" src={avatarUrl} alt="James Reed" />
         </div>
         <div class="bg-white flex flex-col justify-center gap-4 md:gap-8">

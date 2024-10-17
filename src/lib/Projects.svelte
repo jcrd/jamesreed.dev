@@ -24,7 +24,7 @@
                 <div class="flex flex-col gap-6 justify-center">
                     <a href={project.url} class="w-max flex gap-2 items-center">
                         <span class="text-4xl md:text-5xl font-bold">{project.name}</span>
-                        <RightArrow style="font-size:1.75em;margin-top:14"/>
+                        <RightArrow style="font-size:1.75em;margin-top:8"/>
                     </a>
                     <div class="text-xl">
                         {project.description}
@@ -50,6 +50,6 @@
     </div>
     <a href={PUBLIC_BLOG_URL} class="flex gap-2 items-center text-lg md:text-2xl font-semibold mt-12">
         Find more projects on my blog
-        <RightArrow style="margin-top:4" />
+        <RightArrow style="" />
     </a>
 </div>

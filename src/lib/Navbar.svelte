@@ -23,6 +23,6 @@
     </a>
     <a class="sm:text-lg md:text-xl lg:text-2xl btn btn-ghost" href={PUBLIC_BLOG_URL}>
         Blog
-        <RightArrow style="margin-top:4" />
+        <RightArrow style="" />
     </a>
 </nav>
