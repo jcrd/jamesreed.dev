@@ -1,5 +1,8 @@
 <script lang="ts">
+    import { PUBLIC_EMAIL } from '$env/static/public'
+
     import TopRightArrow from '~icons/material-symbols/arrow-top-right-rounded'
+    import EmailIcon from '~icons/material-symbols/alternate-email'
 
     import aboutData from './data/about.json'
     import techData from './data/tech.json'
@@ -7,7 +10,7 @@
     export let avatarUrl
 </script>
 
-<div id="about" class="h-screen scroll-mt-12 md:scroll-mt-28 mx-12 flex flex-col items-center justify-center">
+<div id="about" class="scroll-mt-20 md:scroll-mt-28 mx-12 flex flex-col items-center justify-center">
     <div class="divider text-6xl md:text-[6em] bg-white italic font-light mb-16 md:mb-24">
         {aboutData.title}
     </div>
@@ -16,13 +19,17 @@
         <div class="bg-black ml-12 lg:ml-14 md:p-4 lg:p-6 -skew-x-[22deg] flex justify-center w-fit">
             <img class="mb-4 max-w-[150px] md:max-w-[200px] lg:max-w-[250px] skew-x-[22deg] object-contain" src={avatarUrl} alt="James Reed" />
         </div>
-        <div class="bg-white flex flex-col justify-center gap-4 md:gap-8">
-            <span class="text-xl md:text-2xl lg:text-4xl">
+        <div class="flex flex-col justify-center items-center lg:items-start gap-6 md:gap-8">
+            <span class="bg-white text-xl md:text-2xl lg:text-4xl">
                 {@html aboutData.whoami}
             </span>
-            <a href="#projects" class="flex gap-2 items-center md:text-lg lg:text-xl prose">
+            <a href="#projects" class="bg-white flex gap-2 items-center md:text-lg lg:text-xl prose">
                 {aboutData.blurb}
                 <TopRightArrow style="transform:rotate(90deg);font-size:0.9em;margin-top:4" />
+            </a>
+            <a href={`mailto:${PUBLIC_EMAIL}`} class="bg-white btn btn-outline w-fit">
+                <EmailIcon />
+                Contact me
             </a>
         </div>
     </div>
