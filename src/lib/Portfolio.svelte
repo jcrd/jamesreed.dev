@@ -1,10 +1,5 @@
 <script lang="ts">
-    import { PUBLIC_BLOG_URL, PUBLIC_GITHUB_PROFILE_URL } from '$env/static/public'
-
-    import RightArrow from '~icons/material-symbols/arrow-right-alt-rounded'
-
-    import projectData from './data/projects.json'
-    import iconData from './data/icons.json'
+    import projectData from './data/portfolio.json'
 
     projectData.sort((a, b) => a.order - b.order)
 
@@ -15,9 +10,13 @@
     }
 </script>
 
-<div id="projects" class="scroll-mt-20 md:scroll-mt-28 mx-12 flex flex-col items-center">
-    <div class="divider text-6xl md:text-[6em] italic font-light mb-8 md:mb-24">
-        Projects
+<div id="portfolio" class="scroll-mt-8 mx-12 flex flex-col items-center">
+    <div class="divider mb-8 md:mb-24">
+        <div class="text-6xl md:text-[6em] italic font-light bg-primary -skew-x-[22deg] pl-2 pr-6">
+            <div class="text-primary-content skew-x-[22deg]">
+                Portfolio
+            </div>
+        </div>
     </div>
     <div class="flex flex-col max-w-screen-sm md:max-w-screen-lg">
         {#each projectData as project, idx}
@@ -25,15 +24,9 @@
                 <div class="flex flex-col gap-6 justify-center">
                     <a href={project.url} class="w-max flex gap-2 items-center">
                         <span class="text-4xl md:text-5xl font-bold">{project.name}</span>
-                        <RightArrow style="font-size:1.75em;margin-top:8"/>
                     </a>
                     <div class="text-xl">
                         {project.description}
-                    </div>
-                    <div class="flex gap-2 flex-wrap">
-                        {#each project.tech as techName}
-                            <span class="badge">{techName}</span>
-                        {/each}
                     </div>
                 </div>
                 <a href={project.url} class="w-full relative">
@@ -48,18 +41,5 @@
                 <span class="divider mx-8"></span>
             {/if}
         {/each}
-    </div>
-    <div class="flex flex-col sm:flex-row gap-2 sm:h-12 mt-12">
-        <a href={PUBLIC_GITHUB_PROFILE_URL} class="flex gap-2 items-center text-2xl font-semibold">
-            <RightArrow style="transform:rotate(180deg)" />
-            <img src={iconData.github} alt="GitHub icon" />
-            Find more
-        </a>
-        <span class="divider sm:divider-horizontal text-gray-700"></span>
-        <a href={PUBLIC_BLOG_URL} class="flex gap-2 items-center text-2xl font-semibold">
-            Read more
-            <img src={iconData.blog} alt="Blog icon" />
-            <RightArrow style="" />
-        </a>
     </div>
 </div>

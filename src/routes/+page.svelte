@@ -2,10 +2,7 @@
     import { page } from '$app/stores'
 
     import Hero from '$lib/Hero.svelte'
-    import About from '$lib/About.svelte'
-    import Projects from '$lib/Projects.svelte'
-
-    export let data
+    import Portfolio from '$lib/Portfolio.svelte'
 
     $: if ($page.url.hash) {
         scrollToHash($page.url.hash)
@@ -22,11 +19,10 @@
 </script>
 
 <svelte:head>
-    <title>James Reed on the internet</title>
+    <title>James Reed</title>
 </svelte:head>
 
 <div class="flex flex-col gap-24 md:gap-32">
     <Hero />
-    <About avatarUrl={data.avatarUrl} />
-    <Projects />
+    <Portfolio />
 </div>

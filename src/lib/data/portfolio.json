@@ -2,13 +2,6 @@
     {
         "order": 3,
         "name": "sessiond",
-        "tech": [
-            "Linux",
-            "D-Bus",
-            "C",
-            "Python",
-            "Hugo"
-        ],
         "url": "https://jcrd.github.io/sessiond/",
         "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/v1729008348/jamesreed.dev/sessiond_corner_g0lj1o.png",
         "status": "Stable",
@@ -18,15 +11,6 @@
     {
         "order": 4,
         "name": "brainstack",
-        "tech": [
-            "Svelte",
-            "JavaScript",
-            "Tailwind CSS",
-            "Skeleton UI",
-            "Wails",
-            "Go",
-            "SQLite"
-        ],
         "url": "https://github.com/jcrd/brainstack",
         "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/v1729008511/jamesreed.dev/brainstack_corner_jq9bec.png",
         "status": "Pre-release",
@@ -35,17 +19,7 @@
     },
     {
         "order": 1,
-        "name": "Vegan Spice Boy",
-        "tech": [
-            "Python",
-            "FastAPI",
-            "OpenAI",
-            "JavaScript",
-            "SvelteKit",
-            "Tailwind CSS",
-            "daisyUI",
-            "Strapi"
-        ],
+        "name": "veganspiceboy.com",
         "url": "https://www.veganspiceboy.com/",
         "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/v1729008348/jamesreed.dev/vsb_corner_jmvtqq.png",
         "status": "Production",
@@ -54,14 +28,7 @@
     },
     {
         "order": 2,
-        "name": "Lifecycles",
-        "tech": [
-            "JavaScript",
-            "SvelteKit",
-            "Tailwind CSS",
-            "daisyUI",
-            "Supabase"
-        ],
+        "name": "lifecycles.app",
         "url": "https://lifecycles.app/",
         "imageUrl": "https://res.cloudinary.com/didwm9ipy/image/upload/v1729008348/jamesreed.dev/lifecycles_corner_hvwv74.png",
         "status": "Development",
